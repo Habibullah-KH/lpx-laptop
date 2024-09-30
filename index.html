@@ -1,0 +1,192 @@
+<!Doctype html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LPX</title>
+
+
+        <!--* font-awesome CDN -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <!--* tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                        }
+                    }
+                }
+            }
+            </script>
+
+
+        <!--* DaisyUi CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!--* css link -->
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body class="max-w-[1920px] m-auto bg-[#f2f2f2]">
+
+    <!--* navigation -->
+
+    <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a class="hover:text-[#f93e43]">service</a></li>
+                  <li>
+                    <a class="hover:text-[#f93e43]">prodouct</a>
+                    <ul class="p-2">
+                      <li><a class="hover:text-[#f93e43]">Laptop</a></li>
+                      <li><a class="hover:text-[#f93e43]">Monitor</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="hover:text-[#f93e43]">contact</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl"><i class="fa-brands fa-screenpal"></i>Lpx</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="hover:text-[#f93e43]">service</a></li>
+                <li>
+                  <details>
+                    <summary class="hover:text-[#f93e43]">prodouct</summary>
+                    <ul class="p-2 flex">
+                      <li><a class="hover:text-[#f93e43]">Laptop</a></li>
+                      <li><a class="hover:text-[#f93e43]">Monitor</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a class="hover:text-[#f93e43]">contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn hover:text-[#f93e43]">Button</a>
+            </div>
+          </div>
+    </nav>
+<!--! nav area end -->
+
+<!--* Hero area -->
+
+<header class="hero_area py-56 px-20">
+
+  <!-- <div class="img-container ">
+    <img src="sources/resource/Brown and White Full Photo Laptop Twitter Header.png" class="w-full">
+
+  </div> -->
+
+    <div class="text_container">
+
+        <h1 class="font-bold text-3xl mb-5">
+          Lpx Laptop 13
+            (Intel® Core™ Ultra Series 1)
+          </h1>
+
+        <p class="font-bold">
+          Customize, upgrade, repair. Now with the latest Intel® processors.</p>
+
+          <div class="button_section mt-10">
+            <button class="btn bg-[#f87448] text-white font-bold hover:bg-black">
+              Pre-order now
+
+            </button>
+            <button class="btn bg-[#f87448] text-white font-bold hover:bg-black">
+              Learn more
+
+            </button>
+
+          </div>
+    </div>
+
+
+</header>
+
+<!--! header section end -->
+
+<!--* main area -->
+<main class="flex items-center flex-col p-20">
+
+  <div class="main_text_section text-center mb-10">
+    <h2 class="font-bold text-3xl mb-3">
+      Choose your laptop
+    </h2>
+    <p>
+      Available in both highly portable 13.5" and ultra-high-performance 16" form factors.
+    </p>
+  </div>
+
+  <!--* select section -->
+  <div class="main_select_section lg:flex gap-10">
+
+    <!--* select -1 -->
+    <div class="13_inch_laptop_section p-10 bg-white rounded-xl mb-[5rem] lg:mb-0">
+
+      <div class="img_container">
+        <img src="resource/lp0.jpeg" class="rounded-3xl">
+      </div>
+      <!--* image container end -->
+
+      <div class="text_container pt-10">
+        <h2 class="font-bold text-2xl mb-2">Lpx laptop 13</h2>
+        <p class="mb-3">Thin and light, and available with both AMD and Intel processors.</p>
+ 
+      <a class="" href="./sources/buyPage.html"> 
+         <button class="btn bg-[#f87448] text-white font-bold hover:bg-black">Buy</button>
+      </a>
+      </div>
+    </div>
+
+
+        <!--* select -2 -->
+    <div class="16_inch_laptop_section p-10  bg-white rounded-xl">
+
+      <div class="img_container">
+        <img src="resource/lp01.jpeg" class="rounded-3xl">
+      </div>
+      <!--* image container end -->
+
+      <div class="text_container pt-10">
+        <h2 class="font-bold text-2xl mb-2">Lpx laptop 16</h2>
+        <p class="mb-3">AMD-powered with upgradeable, modular, latest-generation graphics.</p>
+
+
+      <a class="" href="./sources/buyPage.html">  
+        <button class="btn bg-[#f87448] text-white font-bold hover:bg-black">Buy</button>
+      </a>
+      </div>
+    </div>
+  </div>
+</main>
+<!--! main selection section end -->
+
+
+
+    </body>
+</html>

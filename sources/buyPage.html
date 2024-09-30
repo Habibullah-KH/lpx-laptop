@@ -1,0 +1,171 @@
+<!Doctype html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LPX</title>
+
+        <!--* font-awesome CDN -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--* tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                        }
+                    }
+                }
+            }
+            </script>
+
+
+        <!--* DaisyUi CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!--* css link -->
+        <link rel="stylesheet" href="../style/style.css">
+    </head>
+    <body class="max-w-[1920px] m-auto bg-[#f2f2f2]">
+
+<nav class="sticky top-0 z-40 bg-[#FFFFFFB3] backdrop-blur-sm flex justify-between px-10 p-5">
+
+    <div class="logo_section">
+        <a class="btn btn-ghost text-xl"><i class="fa-brands fa-screenpal"></i>Lpx</a>
+    </div>
+
+    <!--* Balace section -->
+    <div class="balance_section flex gap-10">
+
+        <div class="balance">
+            <p>Price</p>
+            <p class="font-bold text-3xl">$
+                <span id="totalBalance" class="">0</span>
+            </p>
+        </div>
+
+        <button class="btn bg-[#f87448] font-bold hover:bg-black text-black">Add To Bag</button>
+    </div>
+
+</nav>
+<!--* Navigation section end -->
+
+
+<main class=" lg:grid lg:grid-cols-2 gap-5 items-start">
+
+    <!--* carousel section start-->
+    <div class="carousel_section lg:col-span-1 bg-white px-5 rounded-xl lg:sticky lg:top-0 lg:h-dvh lg:pb-10">
+        <div class="carousel w-full">
+            <div id="item1" class="carousel-item w-full">
+              <img
+                src="../resource/lp1.jpeg"
+                class="w-full" />
+            </div>
+            <div id="item2" class="carousel-item w-full">
+              <img
+                src="../resource/lp2.jpeg"
+                class="w-full" />
+            </div>
+            <div id="item3" class="carousel-item w-full">
+              <img
+                src="../resource/lp3.jpeg"
+                class="w-full" />
+            </div>
+            <div id="item4" class="carousel-item w-full">
+              <img
+                src="../resource/lp4.jpeg"
+                class="w-full" />
+            </div>
+          </div>
+          <div class="flex w-full justify-center gap-2 py-2">
+            <a href="#item1" class="btn btn-xs bg-[#f93e43] rounded-full text-white">1</a>
+            <a href="#item2" class="btn btn-xs bg-[#f93e43] rounded-full text-white">2</a>
+            <a href="#item3" class="btn btn-xs bg-[#f93e43] rounded-full text-white">3</a>
+            <a href="#item4" class="btn btn-xs bg-[#f93e43] rounded-full text-white">4</a>
+          </div>
+    </div>
+<!-- carousel section end -->
+
+<!--* manue section start -->
+
+<div class="manue_section col-span-1 p-10">
+
+    <div class="title_container mb-10">
+        <h2 class="font-bold text-4xl">Lpx laptop DIY</h2>
+        <p>Lpx Laptop 13 DIY Edition (<span></span>)</p>
+    </div>
+
+    <!--* cpu selection section -->
+    <div class="cpu_section">
+        <button class="intel"></button>
+
+        <button class="amd"></button>
+    </div>
+
+    <!--* cpu type selection -->
+
+    <div class="cpu_select_section">
+
+        <h2 class="font-semibold text-2xl mb-5">
+            Select your cpu
+        </h2>
+
+        <!--? intel section -->
+    
+        <select class="select select-info w-full max-w-xs">
+            <option disabled selected>Intel ultra cpu</option>
+            <option>Intel® Core™ Ultra 9 Processor (Series 2)</option>
+            <option>Intel® Core™ Ultra 7 Processor (Series 2)</option>
+            <option>Intel® Core™ Ultra 5 Processor (Series 2)</option>
+          </select>
+    
+        <!--! Amd section -->
+    
+        <select class="select select-error w-full max-w-xs mb-10">
+            <option disabled selected>Amd Ryzen AI cpu</option>
+            <option>AMD Ryzen™ AI 9 HX 375</option>
+            <option>AMD Ryzen™ AI 9 HX 370</option>
+            <option>AMD Ryzen™ AI 9 365</option>
+          </select>
+    </div>
+
+
+
+<div class="ram_and_storage_section">
+
+<h2 class="font-semibold text-2xl mb-5">
+    Select RAM & Storage
+</h2>
+    
+          <select class="select w-full max-w-xs">
+            <option disabled selected>Ram</option>
+            <option>8GB DDR5 6500mhz</option>
+            <option>16GB DDR5 6500mhz</option>
+            <option>32GB DDR5 6500mhz</option>
+            <option>64GB DDR5 6500mhz</option>
+    
+          </select>
+    
+          <select class="select w-full max-w-xs">
+            <option disabled selected>Storage</option>
+            <option>256Gb NVME GEN5 Dram</option>
+            <option>500Gb NVME GEN5 Dram</option>
+            <option>1tb NVME GEN5 Dram</option>
+            <option>2tb NVME GEN5 Dram</option>
+    
+    
+          </select>
+</div>
+
+
+</div>
+
+
+</main>
+</body>
+</html>
