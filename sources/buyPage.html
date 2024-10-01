@@ -36,7 +36,7 @@
 <nav class="sticky top-0 z-40 bg-[#FFFFFFB3] backdrop-blur-sm flex justify-between px-10 p-5">
 
     <div class="logo_section">
-        <a class="btn btn-ghost text-xl"><i class="fa-brands fa-screenpal"></i>Lpx</a>
+        <a class="btn btn-ghost text-xl" href="../index.html"><i class="fa-brands fa-screenpal"></i>Lpx</a>
     </div>
 
     <!--* Balace section -->
@@ -109,50 +109,53 @@
 
     <!--* cpu type selection -->
 
-    <div class="cpu_select_section ">
+    <div class="cpu_select_section">
 
         <h2 class="font-semibold text-2xl mb-5">
             Select your cpu
         </h2>
 
+        <!--* cpu slection -->
+    <div id="allcpus">
+
         <!--? intel section -->
-    
-        <select class="select select-info w-full max-w-xs">
-            <option disabled selected>Intel ultra cpu</option>
-            <option>
-                <p>Intel® Core™ Ultra 9 Processor (Series 2)</p>
-                 <p>+400</p><span></span>
-            </option>
-            <option>
-                <p>Intel® Core™ Ultra 7 Processor (Series 2)</p>
-                 <p>+800</p><span></span>
-            </option>
-            <option>
-                <p>Intel® Core™ Ultra 5 Processor (Series 2)</p>
-                <p>+1400</p><span></span>
-            </option>
-          </select>
-    
-        <!--! Amd section -->
-    
-        <select class="select select-error w-full max-w-xs mb-10">
-            <option disabled selected>Amd Ryzen AI cpu</option>
-            <option>
-                <p>AMD Ryzen™ AI 9 HX 375 </p> 
-                <p><span>+300</span></p>
-            </option>
-            <option>
-                <p>AMD Ryzen™ AI 9 HX 370 </p> 
-                <p><span>+800</span></p>
-            </option>
-            <option>
-                <p>AMD Ryzen™ AI 9 365 </p> 
-                <p><span>+1100</span></p>
-            </option>
-          </select>
+            <select class="select select-info w-full max-w-xs">
+                <option disabled selected>Intel ultra cpu</option>
+                <option>
+                    <p>Intel® Core™ Ultra 9 Processor (Series 2)</p>
+                     <p>+<span>400</span>$</p>
+                </option>
+                <option>
+                    <p>Intel® Core™ Ultra 7 Processor (Series 2)</p>
+                     <p>+<span>800</span>$</p>
+                </option>
+                <option>
+                    <p>Intel® Core™ Ultra 5 Processor (Series 2)</p>
+                    <p>+<span>1400</span>$</p>
+                </option>
+              </select>
+        
+            <!--! Amd section -->
+        
+            <select class="select select-error w-full max-w-xs mb-10">
+                <option disabled selected>Amd Ryzen AI cpu</option>
+                <option>
+                    <p>AMD Ryzen™ AI 9 HX 375 </p> 
+                    <p>+<span class="ml-10">300</span>$</p>
+                </option>
+                <option>
+                    <p>AMD Ryzen™ AI 9 HX 370 </p> 
+                    <p>+<span class="ml-10">800</span>$</p>
+                </option>
+                <option>
+                    <p>AMD Ryzen™ AI 9 365 </p> 
+                    <p>+<span class="ml-10">1100</span>$</p>
+                </option>
+              </select>
+        </div>
     </div>
 
-
+        <!--* cpu slection end-->
 
 <div class="ram_and_storage_section">
 
@@ -164,22 +167,22 @@
             <option disabled selected>Ram</option>
             <option>
                 <p>8GB DDR5 6500mhz</p> 
-                <p>+<span>20</span></p>
+                <p>+<span>20</span>$</p>
             
             </option>
             <option>
                 <p>16GB DDR5 6500mhz</p>
-                 <p>+<span>30</span></p>
+                 <p>+<span>30</span>$</p>
             
             </option>
             <option>
                 <p>32GB DDR5 6500mhz</p>
-                 <p>+<span>40</span></p>
+                 <p>+<span>40</span>$</p>
             
             </option>
             <option>
                 <p>64GB DDR5 6500mhz</p>
-                 <p>+<span>50</span></p>
+                 <p>+<span>50</span>$</p>
             
             </option>
     
@@ -189,22 +192,22 @@
             <option disabled selected>Storage</option>
             <option>
                 <p>256Gb NVME GEN5 Dram</p>
-                <p>+<span>20</span></p>
+                <p>+<span>20</span>$</p>
             
             </option>
             <option>
                 <p>500Gb NVME GEN5 Dram</p> 
-                <p>+<span>30</span></p>
+                <p>+<span>30</span>$</p>
             
             </option>
             <option>
                 <p>1tb NVME GEN5 Dram</p> 
-                <p>+<span>40</span></p>
+                <p>+<span>40</span>$</p>
             
             </option>
             <option>
                 <p>2tb NVME GEN5 Dram</p> 
-                <p>+<span>50</span></p>
+                <p>+<span>50</span>$</p>
             
             </option>
     
