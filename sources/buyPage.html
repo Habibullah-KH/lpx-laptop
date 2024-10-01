@@ -109,7 +109,7 @@
 
     <!--* cpu type selection -->
 
-    <div class="cpu_select_section">
+    <div class="cpu_select_section ">
 
         <h2 class="font-semibold text-2xl mb-5">
             Select your cpu
@@ -119,18 +119,36 @@
     
         <select class="select select-info w-full max-w-xs">
             <option disabled selected>Intel ultra cpu</option>
-            <option>Intel® Core™ Ultra 9 Processor (Series 2)</option>
-            <option>Intel® Core™ Ultra 7 Processor (Series 2)</option>
-            <option>Intel® Core™ Ultra 5 Processor (Series 2)</option>
+            <option>
+                <p>Intel® Core™ Ultra 9 Processor (Series 2)</p>
+                 <p>+400</p><span></span>
+            </option>
+            <option>
+                <p>Intel® Core™ Ultra 7 Processor (Series 2)</p>
+                 <p>+800</p><span></span>
+            </option>
+            <option>
+                <p>Intel® Core™ Ultra 5 Processor (Series 2)</p>
+                <p>+1400</p><span></span>
+            </option>
           </select>
     
         <!--! Amd section -->
     
         <select class="select select-error w-full max-w-xs mb-10">
             <option disabled selected>Amd Ryzen AI cpu</option>
-            <option>AMD Ryzen™ AI 9 HX 375</option>
-            <option>AMD Ryzen™ AI 9 HX 370</option>
-            <option>AMD Ryzen™ AI 9 365</option>
+            <option>
+                <p>AMD Ryzen™ AI 9 HX 375 </p> 
+                <p><span>+300</span></p>
+            </option>
+            <option>
+                <p>AMD Ryzen™ AI 9 HX 370 </p> 
+                <p><span>+800</span></p>
+            </option>
+            <option>
+                <p>AMD Ryzen™ AI 9 365 </p> 
+                <p><span>+1100</span></p>
+            </option>
           </select>
     </div>
 
@@ -144,19 +162,51 @@
     
           <select class="select w-full max-w-xs">
             <option disabled selected>Ram</option>
-            <option>8GB DDR5 6500mhz</option>
-            <option>16GB DDR5 6500mhz</option>
-            <option>32GB DDR5 6500mhz</option>
-            <option>64GB DDR5 6500mhz</option>
+            <option>
+                <p>8GB DDR5 6500mhz</p> 
+                <p>+<span>20</span></p>
+            
+            </option>
+            <option>
+                <p>16GB DDR5 6500mhz</p>
+                 <p>+<span>30</span></p>
+            
+            </option>
+            <option>
+                <p>32GB DDR5 6500mhz</p>
+                 <p>+<span>40</span></p>
+            
+            </option>
+            <option>
+                <p>64GB DDR5 6500mhz</p>
+                 <p>+<span>50</span></p>
+            
+            </option>
     
           </select>
     
           <select class="select w-full max-w-xs">
             <option disabled selected>Storage</option>
-            <option>256Gb NVME GEN5 Dram</option>
-            <option>500Gb NVME GEN5 Dram</option>
-            <option>1tb NVME GEN5 Dram</option>
-            <option>2tb NVME GEN5 Dram</option>
+            <option>
+                <p>256Gb NVME GEN5 Dram</p>
+                <p>+<span>20</span></p>
+            
+            </option>
+            <option>
+                <p>500Gb NVME GEN5 Dram</p> 
+                <p>+<span>30</span></p>
+            
+            </option>
+            <option>
+                <p>1tb NVME GEN5 Dram</p> 
+                <p>+<span>40</span></p>
+            
+            </option>
+            <option>
+                <p>2tb NVME GEN5 Dram</p> 
+                <p>+<span>50</span></p>
+            
+            </option>
     
     
           </select>
@@ -167,5 +217,7 @@
 
 
 </main>
+
+<script src="script.js"></script>
 </body>
 </html>
