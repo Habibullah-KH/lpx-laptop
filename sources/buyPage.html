@@ -119,8 +119,8 @@
     <div id="allcpus">
 
         <!--? intel section -->
-            <select class="select select-info w-full max-w-xs">
-                <option disabled selected>Intel ultra cpu</option>
+            <select name="intel" class="select select-info w-full max-w-xs">
+                <option disabled selected id="intelName">Intel ultra cpu</option>
                 <option>
                     <p>Intel® Core™ Ultra 9 Processor (Series 2)</p>
                      <p>+<span>400</span>$</p>
@@ -137,8 +137,8 @@
         
             <!--! Amd section -->
         
-            <select class="select select-error w-full max-w-xs mb-10">
-                <option disabled selected>Amd Ryzen AI cpu</option>
+            <select name="amd" class="select select-error w-full max-w-xs mb-10">
+                <option disabled selected id="amdName">Amd Ryzen AI cpu</option>
                 <option>
                     <p>AMD Ryzen™ AI 9 HX 375 </p> 
                     <p>+<span class="ml-10">300</span>$</p>
@@ -163,7 +163,9 @@
     Select RAM & Storage
 </h2>
     
-          <select class="select w-full max-w-xs">
+<div id="ramStorage">
+<!--* ram section -->
+          <select name="ram" class="select w-full max-w-xs">
             <option disabled selected>Ram</option>
             <option>
                 <p>8GB DDR5 6500mhz</p> 
@@ -187,8 +189,10 @@
             </option>
     
           </select>
-    
-          <select class="select w-full max-w-xs">
+
+<!--* storage section -->
+
+          <select name="storage" class="select w-full max-w-xs">
             <option disabled selected>Storage</option>
             <option>
                 <p>256Gb NVME GEN5 Dram</p>
@@ -213,6 +217,8 @@
     
     
           </select>
+        </div>
+        <!--* ramStorage ens -->
 </div>
 
 
