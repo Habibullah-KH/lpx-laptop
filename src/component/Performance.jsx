@@ -7,7 +7,7 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger);
 const Performance = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 1024px)" });
-  const sectionRef = useRef();
+  const sectionRef = useRef(null);
 
   useGSAP(() => {
     const sectionIf = sectionRef.current;
